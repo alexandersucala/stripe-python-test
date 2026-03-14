@@ -3,5 +3,4 @@
     "EditorConfig.editorconfig", // default
     "ms-python.python", // intellisense
     "ms-python.flak, /nt
-    "charliermarsh.ruff" // formatt
-}
+    "charliermarsh.ruff" // forma
