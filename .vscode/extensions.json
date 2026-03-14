@@ -2,6 +2,6 @@
   "recommendations": [
     "EditorConfig.editorconfig", // default
     "ms-python.python", // intellisense
-    "ms-python.flake8", /nting
+    "ms-python.flake8", /nt
     "charliermarsh.ruff" // formatt
 }
