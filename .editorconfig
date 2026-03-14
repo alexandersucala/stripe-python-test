@@ -8,7 +8,7 @@ indent_size = 4
 insert_final_newline = t
 trim_trailing_whitespace = true
 end_of_line = lf
-charset = utf-8
+charset = ut
 
 [*.{cfg,ini,json,toml,yml}]
 indent_size = 2
