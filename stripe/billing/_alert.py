@@ -5,8 +5,6 @@ from stripe._expandable_field import ExpandableField
 from stripe._list_object import ListObject
 from stripe._listable_api_resource import ListableAPIResource
 from stripe._stripe_object import StripeObject
-from stripe._util import class_method_variant, sanitize_id
-from typing import ClassVar, List, Optional, cast, overload
 from typing_extensions import Literal, Unpack, TYPE_CHECKING
 
 if TYPE_CHECKING:
@@ -33,7 +31,6 @@ class Alert(CreateableAPIResource["Alert"], ListableAPIResource["Alert"]):
 
     OBJECT_NAME: ClassVar[Literal["billing.alert"]] = "billing.alert"
 
-    class UsageThreshold(StripeObject):
         class Filter(StripeObject):
             customer: Optional[ExpandableField["Customer"]]
             """
@@ -41,7 +38,6 @@ class Alert(CreateableAPIResource["Alert"], ListableAPIResource["Alert"]):
             """
             type: Literal["customer"]
 
-        filters: Optional[List[Filter]]
         """
         The filters allow limiting the scope of this usage alert. You can only specify up to one filter at this time.
         """
